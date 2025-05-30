@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تعلّم العربية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="language-switcher">
+    <button onclick="changeLang('ar')">عربي</button>
+    <button onclick="changeLang('en')">English</button>
+    <button onclick="changeLang('fr')">Français</button>
+</div>
+
+<h1 id="title">تعلّم اللغة العربية</h1>
+
+<div class="tabs">
+    <button onclick="showSection('letters')" class="active">الحروف</button>
+    <button onclick="showSection('numbers')">الأرقام</button>
+    <button onclick="showSection('words')">الكلمات الشائعة</button>
+</div>
+
+<div id="letters" class="section active">
+    <h2 id="letters-title">الحروف</h2>
+    <div class="dials">
+        <button onclick="toggleDialect('fusha')">الفصحى</button>
+        <button onclick="toggleDialect('masri')">المصرية</button>
+        <button onclick="toggleDialect('khaleeji')">الخليجية</button>
+    </div>
+    <div class="letters-container"></div>
+</div>
+
+<div id="numbers" class="section">
+    <h2 id="numbers-title">الأرقام</h2>
+    <div class="numbers-container"></div>
+</div>
+
+<div id="words" class="section">
+    <h2 id="words-title">الكلمات الشائعة</h2>
+    <div class="words-container"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
